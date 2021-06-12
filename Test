@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>HTML</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+  <p>Esta página web es una página HTML válida.</p>
+
+<script>
+function usrpas(){
+if (document.form1.txt.value=="admin" && document.form1.num.value=="1234"){window.location="home.htm"}
+else {alert("Error en Usuario o Contraseña. Intenta de nuevo.")}
+}
+document.oncontextmenu=new Function("return false");
+</script>
+<form name="form1">
+<input type="text" name="txt"> Usuario (admin)<br>
+<input type="text" name="num"> Contraseña (1234)<br>
+<input type="button" value="ir a.." onclick="usrpas()">
+</form>
+</body>
+</html>
